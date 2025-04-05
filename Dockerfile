@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
 
-EXPOSE 8081
+EXPOSE 8000/tcp
+EXPOSE 8000/udp
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
